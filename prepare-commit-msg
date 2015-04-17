@@ -12,6 +12,7 @@ DATE=`date`
 
 printf "\n"                      >> $1
 printf "This commit coded at:\n" >> $1
+printf "---------------------\n" >> $1
 printf "$ADDRESS\n"              >> $1
 printf "$LAT, $LNG\n"            >> $1
 printf "@ $DATE\n"               >> $1

@@ -25,6 +25,7 @@ Now, whenever you make a `git commit`, we will use `whereami` to source yoru lat
 #
 
 This commit coded at:
+---------------------
 63 Hanbury Street London E1 5JP UK
 51.520182, -0.070440
 @ Fri Apr 17 15:57:03 BST 2015
