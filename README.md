@@ -6,9 +6,9 @@ Do you travel a lot?  Would you team be interesetd to know where your code is co
 1. Install `whereami`
 - Head on over to https://github.com/robmathers/WhereAmI and download the `whereami` excecutable. Place it in your home folder, like `~/whereami`
 
-2. In whichever git repository you want to use this on, copy the `prepare-commit-msg` into ~/PROJECT/.git/hooks.
+2. In whichever git repository you want to use this on, copy the `prepare-commit-msg` into `~/PROJECT/.git/hooks`.
 
-That's it!
+**That's it!**
 
 Now, whenever you make a `git commit`, we will use `whereami` to source yoru lat/lng, and then ask Google's geocoder what your address is, resulting in:
 
