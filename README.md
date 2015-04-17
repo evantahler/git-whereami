@@ -1,10 +1,10 @@
 # git-whereami
-*Append your location to all of our git commits*
+*Append your location to all of our git commits!*
 
 Do you travel a lot?  Would you team be interesetd to know where your code is coming from?  Then this is for you!
 
 1. Install `whereami`
-- Head on over to https://github.com/robmathers/WhereAmI and download the `whereami` excecutable. Place it in your home folder, like `~/whereami`
+  - Head on over to https://github.com/robmathers/WhereAmI and download the `whereami` excecutable. Place it in your home folder, like `~/whereami`
 
 2. In whichever git repository you want to use this on, copy the `prepare-commit-msg` into `~/PROJECT/.git/hooks`.
 
