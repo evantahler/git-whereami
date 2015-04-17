@@ -1,0 +1,17 @@
+#!/bin/bash
+
+WHEREAMI="$HOME/whereami"
+
+LAT=`$WHEREAMI | grep Latitude  | awk -F" " '{print $2}' | awk '{print $1}'`
+LNG=`$WHEREAMI | grep Longitude | awk -F" " '{print $2}' | awk '{print $1}'`
+
+URL="http://maps.googleapis.com/maps/api/geocode/json?latlng=$LAT,$LNG&sensor=false"
+ADDRESS=`eval "curl -s \"$URL\" | grep formatted_address | head -n 1 | sed 's/\"//g' | sed 's/,//g'"`
+ADDRESS=`echo $ADDRESS | awk -F' : ' '{print $2}'`
+DATE=`date`
+
+printf "\n"                      >> $1
+printf "This commit coded at:\n" >> $1
+printf "$ADDRESS\n"              >> $1
+printf "$LAT, $LNG\n"            >> $1
+printf "@ $DATE\n"               >> $1
